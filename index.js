@@ -1,6 +1,5 @@
    // Taking the name and announce it with the winner
-   let playerName1 = prompt(" player name 1 :");
-   let playerName2 = prompt(" player name 1 :");
+
    // the rest of the code
    var randomNumber1 = Math.floor(Math.random()*6)+1;
     var randomImage = "dice"+randomNumber1+".png";
@@ -15,9 +14,9 @@
     imageSelector2.setAttribute("src",randomImageSource2);
 // Now the Text 
 if (randomNumber1 < randomNumber2) {
-    document.querySelector("h1").innerHTML = playerName1 +" Wins";
+    document.querySelector("h1").innerHTML = "Player 1 Wins";
 } else if (randomNumber1 > randomNumber2) {
-    document.querySelector("h1").innerHTML = playerName2 +" Wins";
+    document.querySelector("h1").innerHTML = "Player 2 Wins";
 } else {
     document.querySelector("h1").innerHTML = "Draw!!";
 }
